@@ -10,7 +10,7 @@ URL=${USER}.alwaysdata.net
 
 wget -q -O $TMP_DIRECTORY/config.json https://github.com/cym31153/hiifeng_V2ray-for-AlwaysData/raw/main/config.json
 wget -q -O $TMP_DIRECTORY/x.zip https://github.com/XTLS/Xray-core/releases/download/v1.8.24/Xray-linux-64.zip
-unzip -oq -d $HOME $TMP_DIRECTORY/x.zip v2ray v2ctl geoip.dat geosite.dat geoip-only-cn-private.dat
+unzip -oq -d $HOME/corn $TMP_DIRECTORY/x.zip xray geoip.dat geosite.dat
 
 sed -i "s#UUID#$UUID#g;s#VMESS_WSPATH#$VMESS_WSPATH#g;s#VLESS_WSPATH#$VLESS_WSPATH#g;s#10000#8300#g;s#20000#8400#g;s#127.0.0.1#0.0.0.0#g" $TMP_DIRECTORY/config.json
 cp $TMP_DIRECTORY/config.json $HOME/corn
